@@ -2,21 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanban Borad</title>
-    <link  rel="stylesheet"  href="./style.css"/>
-    <script src="https://kit.fontawesome.com/7893359cf5.js" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
-
+    <title>Kanban Board</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/589957875e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navbar start -->
-     <nav class="toolbox-cont">
+    <nav class="toolbox-cont">
         <div class="toolbox-priority-cont">
-            <div class="color lightpink"></div>
-            <div class="color lightgreen"></div>
-            <div class="color lightblue"></div>
-            <div class="color black"></div>
+            <div class="lightpink color"></div>
+            <div class="lightgreen color"></div>
+            <div class="lightblue color"></div>
+            <div class="black color"></div>
         </div>
         <div class="action-btn-cont">
             <div class="add-btn">
@@ -26,8 +24,20 @@
                 <i class="fa-solid fa-times" aria-hidden="true"></i>
             </div>
         </div>
-     </nav>
-    <!-- Navbar end -->
+    </nav>
+    <div class="main-container">
+    </div>
 
+    <div class="modal-cont">
+        <textarea class="textArea-cont" placeholder="Enter Your task"></textarea>
+        <div class="priority-colors-container">
+            <div class="lightpink priority-color"></div>
+            <div class="lightgreen priority-color"></div>
+            <div class="lightblue priority-color"></div>
+            <div class="black priority-color active"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="./script.js"> </script>
 </body>
 </html>

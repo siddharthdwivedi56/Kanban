@@ -1,77 +1,150 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.toolbox-cont{
-    background-color:#4b4b4b;
-    display: flex;
+
+.toolbox-cont {
+    background-color: #4b4b4b;
     height: 100px;
+    display: flex;
     align-items: center;
 }
 
-.toolbox-priority-cont{    
-    background-color: #3d3d3d;
+.toolbox-priority-cont {
     display: flex;
+    background-color: #3d3d3d;
+    width: 300px;
+    height: 70px;
+    margin-left: 30px;
     justify-content: space-around;
     align-items: center;
-    width:350px;
-    height:70px;
 }
 
-.color{
-    width:60px;
-    height:40px;
+.color {
+    width: 40px;
+    height: 30px;
     background-color: aqua;
 }
-.color:hover{
-    width:65px;
-    height:45px;
-    /* background-color: #485460; */
+
+.color:hover {
+    background-color: #485460;
 }
 
-.lightpink{
+.lightpink {
     background-color: lightpink;
-}   
-
-.lightgreen{
-    background-color: lightgreen;
 }
 
-.lightblue{
+.lightblue {
     background-color: lightblue;
 }
 
-.black{
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.black {
     background-color: black;
 }
 
-.action-btn-cont{
+.action-btn-cont {
     background-color: #3d3d3d;
-    display: flex;
-    width:140px;
     height: 70px;
-    margin-left: 70px;
-}
-.add-btn{
     display: flex;
-    color:white;
-    font-size: 30px;
-    width:50%;
-    justify-content: center;
-    align-items: center;
-}
-.remove-btn{
-    display: flex;
-    color:white;
-    font-size: 30px;
-    width:50%;
-    justify-content: center;
-    align-items: center;
-}
-.add-btn:hover {
-    background-color: rgb(4, 85, 4);
-}
-.remove-btn:hover {
-    background-color: rgb(4, 85, 4);
+    width: 100px;
+    margin-left: 30px;
 }
 
+.add-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    width: 50%;
+}
+
+.add-btn:hover {
+    background-color: #4BB543;
+}
+
+.remove-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    width: 50%;
+}
+
+.remove-btn:hover {
+    background-color: #4BB543;
+}
+
+.priority-color {
+    height: 48px;
+    width: 80px;
+}
+
+
+.active {
+    border: 5px solid lightsalmon;
+}
+
+.modal-cont {
+    height: 50vh;
+    width: 45vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.textArea-cont {
+    width: 75%;
+    outline: none;
+    height: 100%;
+    background-color: #dfe4ea;
+    resize: none;
+    border: none;
+    font-size: 32px;
+}
+
+.priority-colors-container {
+    background-color: #4b4b4b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.ticket-cont {
+    height: 192px;
+    width: 200px;
+    background-color: coral;
+    position: relative;
+}
+
+.ticket-color {
+    height: 16px;
+}
+
+.ticket-id {
+    height: 32px;
+    background-color: yellow;
+}
+
+.ticket-lock {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
